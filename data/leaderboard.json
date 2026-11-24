@@ -1,0 +1,126 @@
+{
+ "updated": 0,
+ "server": {
+  "id": "1262824717421641880",
+  "name": "LarpScrims",
+  "icon": "",
+  "members": null
+ },
+ "achievements": [
+  {
+   "key": "first_scrim",
+   "emoji": "🎟️",
+   "name": "First Whistle",
+   "description": "Play your first scrim"
+  },
+  {
+   "key": "scrims_10",
+   "emoji": "⚽",
+   "name": "Regular",
+   "description": "Play 10 scrims"
+  },
+  {
+   "key": "scrims_50",
+   "emoji": "🏟️",
+   "name": "Veteran",
+   "description": "Play 50 scrims"
+  },
+  {
+   "key": "scrims_100",
+   "emoji": "💯",
+   "name": "Centurion",
+   "description": "Play 100 scrims"
+  },
+  {
+   "key": "streak_10",
+   "emoji": "🧱",
+   "name": "Reliable",
+   "description": "Show up to 10 scrims in a row"
+  },
+  {
+   "key": "streak_25",
+   "emoji": "🗿",
+   "name": "Iron Wall",
+   "description": "Show up to 25 scrims in a row"
+  },
+  {
+   "key": "clutch_1",
+   "emoji": "🦸",
+   "name": "Clutch Sub",
+   "description": "Fill in from the sub list and show up"
+  },
+  {
+   "key": "clutch_5",
+   "emoji": "🚑",
+   "name": "Super Sub",
+   "description": "Save 5 scrims as a sub"
+  },
+  {
+   "key": "duel_1",
+   "emoji": "⚔️",
+   "name": "First Blood",
+   "description": "Win a ranked 1v1"
+  },
+  {
+   "key": "duel_10",
+   "emoji": "🗡️",
+   "name": "Duelist",
+   "description": "Win 10 ranked 1v1s"
+  },
+  {
+   "key": "duel_25",
+   "emoji": "👹",
+   "name": "Egoist",
+   "description": "Win 25 ranked 1v1s"
+  },
+  {
+   "key": "ref_10",
+   "emoji": "🏁",
+   "name": "Whistle Blower",
+   "description": "Referee 10 ranked 1v1s"
+  },
+  {
+   "key": "elo_pro",
+   "emoji": "🔴",
+   "name": "Pro",
+   "description": "Reach 900 Elo"
+  },
+  {
+   "key": "elo_master",
+   "emoji": "🟣",
+   "name": "Master",
+   "description": "Reach 1300 Elo"
+  },
+  {
+   "key": "elo_legend",
+   "emoji": "👑",
+   "name": "Egoist Legend",
+   "description": "Reach 1800 Elo"
+  },
+  {
+   "key": "tier_a",
+   "emoji": "🅰️",
+   "name": "A-Tier",
+   "description": "Get rated A- or better (80+)"
+  },
+  {
+   "key": "tier_s",
+   "emoji": "🌟",
+   "name": "S-Tier",
+   "description": "Get rated S- or better (90+)"
+  },
+  {
+   "key": "votes_10",
+   "emoji": "💙",
+   "name": "Fan Favourite",
+   "description": "Get 10 community votes"
+  },
+  {
+   "key": "votes_50",
+   "emoji": "🔥",
+   "name": "Crowd Idol",
+   "description": "Get 50 community votes"
+  }
+ ],
+ "players": []
+}

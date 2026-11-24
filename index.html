@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LarpScrimsTV · Leaderboards</title>
+<meta name="description" content="Live LarpScrims leaderboards for Azure Latch: player ratings (S to G), Elo ranks and community favourites, plus a profile for every player.">
+
+<!-- Link preview (Discord, Twitter/X, WhatsApp ...) -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="LarpScrimsTV">
+<meta property="og:title" content="LarpScrimsTV · Live leaderboards">
+<meta property="og:description" content="Who's the best in LarpScrims? Ratings, Elo and community favourites, updated live by the bot. Vote with /vote in Discord.">
+<meta property="og:url" content="https://funsparktv-ai.github.io/LarpScrimsTV/">
+<meta property="og:image" content="https://funsparktv-ai.github.io/LarpScrimsTV/banner.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="LarpScrimsTV leaderboards">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="LarpScrimsTV · Live leaderboards">
+<meta name="twitter:description" content="Ratings, Elo and community favourites for LarpScrims, updated live.">
+<meta name="twitter:image" content="https://funsparktv-ai.github.io/LarpScrimsTV/banner.png">
+<meta name="theme-color" content="#3b82f6">
+<link rel="icon" type="image/png" href="favicon.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <div class="wrap top-row">
+    <a class="logo" href="#rating" aria-label="LarpScrimsTV home">
+      <span class="logo-mark">▶</span><span>LarpScrims<b>TV</b></span>
+    </a>
+    <a class="btn btn-discord" id="joinBtn" href="https://discord.com/servers/1262824717421641880" target="_blank" rel="noopener">Join the Discord</a>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <p class="eyebrow">Azure Latch · LarpScrims</p>
+    <h1>Who runs the pitch?</h1>
+    <p class="lede">Live leaderboards straight from the bot: referee <b>ratings</b>, ranked <b>Elo</b> and the players the <b>community</b> loves most.</p>
+    <div class="hero-stats" id="heroStats" aria-live="polite"></div>
+  </div>
+</section>
+
+<main class="wrap layout">
+  <section class="board" aria-labelledby="boardTitle">
+    <div class="board-head">
+      <nav class="tabs" role="tablist" aria-label="Leaderboard">
+        <button role="tab" data-board="rating" aria-selected="true">⭐ Rating</button>
+        <button role="tab" data-board="elo" aria-selected="false">📈 Elo</button>
+        <button role="tab" data-board="community" aria-selected="false">💙 Community</button>
+      </nav>
+      <label class="search">
+        <span class="sr">Search players</span>
+        <input id="search" type="search" placeholder="Search players" autocomplete="off">
+      </label>
+    </div>
+    <h2 id="boardTitle" class="board-title"></h2>
+    <p id="boardHint" class="board-hint"></p>
+    <div id="podium" class="podium"></div>
+    <ol id="list" class="list"></ol>
+    <p id="empty" class="empty" hidden></p>
+    <p class="updated" id="updated"></p>
+  </section>
+
+  <aside class="side">
+    <div class="card">
+      <h3>💙 Vote for a player</h3>
+      <p>Type <code>/vote @player</code> in the Discord. Everyone gets <b>1 vote a day</b>, and the most-voted players top the Community board.</p>
+    </div>
+    <div class="card">
+      <h3>⚔️ Climb the ladder</h3>
+      <p><code>/challenge @player</code> for a ranked 1v1 with a ref, sign up for scrims, and unlock <code>/achievements</code>.</p>
+    </div>
+    <div class="card widget-card">
+      <h3>🟢 Live on Discord</h3>
+      <iframe class="widget" src="https://discord.com/widget?id=1262824717421641880&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" title="LarpScrims Discord server" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+    </div>
+  </aside>
+</main>
+
+<dialog id="profile" class="profile" aria-labelledby="pName">
+  <button class="close" id="closeProfile" aria-label="Close">✕</button>
+  <div id="profileBody"></div>
+</dialog>
+
+<footer class="foot wrap">LarpScrimsTV · fan-made for the LarpScrims community · data updates every few minutes</footer>
+<script src="app.js"></script>
+</body>
+</html>
